@@ -66,7 +66,7 @@ const Contact = () => {
               alt="phone"
               className="w-[25px] mr-[10px]"
             />{" "}
-            +2 123-456-7890
+            +234 806-595-8123
           </li>
           <li className="flex items-center my-[20px]">
             <img
@@ -74,7 +74,7 @@ const Contact = () => {
               alt="location"
               className="w-[25px] mr-[10px]"
             />
-            Block 203 Algeria Road Manhattan, USA
+            103 Ibusa Road, Umuonaje, Asaba, Delta
           </li>
         </ul>
       </div>

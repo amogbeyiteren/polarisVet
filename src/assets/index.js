@@ -127,18 +127,18 @@ export const roadMap = [
 
 export const testimonialData = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae ligula tincidunt, venenatis augue sed, volutpat est.",
+    text: "The staff here is so kind, caring, and simply incredible! The excitement they have when they see my dog, Lion, and how excited he even gets when he sees all of them, is what I love most! Makes me as a dog owner know my pup is in the right hands for care",
     name: " ",
-    role: "Pet Owner | Happy Client",
+    role: "Henry Ejiofor | Happy Client",
   },
   {
-    text: "Quisque efficitur dolor vel ipsum aliquet, at feugiat urna accumsan. Mauris vehicula ante non nulla consectetur lacinia.",
+    text: "Ive been bringing my two cats to Polaris Veterinary for years, and every visit has been wonderful. The team is incredibly knowledgeable and kind. They took the time to answer all of my questions about my cats health, and they even went the extra mile by following up the next day to check on her progress. I can always count on them to provide the best care for my pets.",
     name: " ",
-    role: "Pet Parent | Loyal Visitor",
+    role: "Rosemary | Loyal Visitor",
   },
   {
-    text: "Ut volutpat ligula ac elit vestibulum, sed bibendum erat commodo. Aenean consequat velit et ipsum molestie aliquam.",
+    text: "After visiting several vet clinics in the area, I can confidently say that Polaris Veterinary is hands down the best. The team is extremely professional and knowledgeable. They treat my dog like family, and I love that they are proactive about his health. I always feel comfortable asking questions, and I leave every appointment knowing hes in the best hands",
     name: " ",
-    role: "Pet Owner | Frequent Client",
+    role: "Mr Ndubuisi | Frequent Client",
   },
 ];
