@@ -45,11 +45,7 @@ const Contact = () => {
           />
         </h3>
         <p className=" ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          sequi pariatur aspernatur, architecto ad hic aperiam, mollitia ex
-          laborum impedit quod iste suscipit nisi qui iusto. Exercitationem
-          officiis quas beatae sed veritatis aliquam commodi tempore modi
-          provident!
+          How may we help you today
         </p>
         <ul>
           <li className="flex items-center my-[20px]">
