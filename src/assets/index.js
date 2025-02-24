@@ -132,7 +132,7 @@ export const testimonialData = [
     role: "Henry Ejiofor | Happy Client",
   },
   {
-    text: "Ive been bringing my two cats to Polaris Veterinary for years, and every visit has been wonderful. The team is incredibly knowledgeable and kind. They took the time to answer all of my questions about my cats health, and they even went the extra mile by following up the next day to check on her progress. I can always count on them to provide the best care for my pets.",
+    text: "Ive been bringing my two cats to Polaris Veterinary consult for years, and every visit has been wonderful. The team is incredibly knowledgeable and kind. They took the time to answer all of my questions about my cats health, and they even went the extra mile by following up the next day to check on her progress. I can always count on them to provide the best care for my pets.",
     name: " ",
     role: "Rosemary | Loyal Visitor",
   },

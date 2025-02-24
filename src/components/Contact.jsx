@@ -62,7 +62,7 @@ const Contact = () => {
               alt="phone"
               className="w-[25px] mr-[10px]"
             />{" "}
-            +234 806-595-8123
+            +234 807-267-7221
           </li>
           <li className="flex items-center my-[20px]">
             <img
