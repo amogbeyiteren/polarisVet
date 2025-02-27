@@ -54,7 +54,8 @@ const Contact = () => {
               alt="mail"
               className="w-[25px] mr-[10px]"
             />
-            polarisvet@gmail.com
+            <a href="mailto:polarisvet@gmail.com">polarisvet@gmail.com</a>
+          
           </li>
           <li className="flex items-center my-[20px]">
             <img
@@ -62,7 +63,8 @@ const Contact = () => {
               alt="phone"
               className="w-[25px] mr-[10px]"
             />{" "}
-            +234 807-267-7221
+            <a href="tel:+2348072677221"> +234 807-267-7221</a>
+            
           </li>
           <li className="flex items-center my-[20px]">
             <img
