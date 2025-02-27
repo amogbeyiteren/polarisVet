@@ -76,8 +76,8 @@ export const brandImages = [
 ];
 
 export const services = [
-    { title: "15-Minute Consultation", description: "Quick and convenient checkups for your pet’s health.", color: "bg-blue-600", img: serviceImage1 },
-    { title: "12-Hour Emergency Vetcare", description: "Urgent care for your pets when they need it most.", color: "bg-red-500", img: serviceImage2 },
+    { title: "Pet in-House Diagnostics", description: "Polaris Veterinary Consult places a significnt emphasis on using top notch diagnostic equipment because we recognize that diagnostics are an essential componentof veterinary", color: "bg-blue-600", img: serviceImage1 },
+    { title: "Radiology", description: "Radiography is available right here at our facility to help with the rapid identification of a variety of conditions and illnesses.This radiograph interpretation is an extra service to our clients and patients", color: "bg-red-500", img: serviceImage2 },
   { title: "Animal Health Certificate", description: "Documentation for hassle-free pet travel.", color: "bg-green-600", img: serviceImage3 },
   { title: "Pet Dental Care", description: "Comprehensive oral health care for your pets.", color: "bg-amber-500", img: serviceImage4  },
   { title: "General Surgery", description: "Expert surgical care to ensure your pet’s well-being.", color: "bg-purple-600", img: serviceImage5 },
