@@ -15,7 +15,7 @@ const Features = () => {
             Our Core Services
           </h5>
           <h2 className="text-2xl font-semibold sm:text-4xl">
-            What Makes PolarisVet Unique?
+            What Makes Polaris Veterinary Consult Unique?
           </h2>
         </div>
         <p className="max-w-lg sm:my-10 text-gray-600">
@@ -65,7 +65,7 @@ const Features = () => {
                   Compassionate Care for Every Pet
                 </h2>
                 <p className="text-gray-500">
-                  At PolarisVet, we provide a wide range of services designed to
+                  At Polaris Veterinary Consult, we provide a wide range of services designed to
                   ensure the health and happiness of your pets.
                 </p>
               </div>

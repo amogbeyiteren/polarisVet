@@ -76,8 +76,8 @@ export const brandImages = [
 ];
 
 export const services = [
-    { title: "15-Minute Consultation", description: "Quick and convenient checkups for your pet’s health.", color: "bg-blue-600", img: serviceImage1 },
-    { title: "12-Hour Emergency Vetcare", description: "Urgent care for your pets when they need it most.", color: "bg-red-500", img: serviceImage2 },
+    { title: "Pet in-House Diagnostics", description: "Polaris Veterinary Consult places a significnt emphasis on using top notch diagnostic equipment because we recognize that diagnostics are an essential componentof veterinary", color: "bg-blue-600", img: serviceImage1 },
+    { title: "Radiology", description: "Radiography is available right here at our facility to help with the rapid identification of a variety of conditions and illnesses.This radiograph interpretation is an extra service to our clients and patients", color: "bg-red-500", img: serviceImage2 },
   { title: "Animal Health Certificate", description: "Documentation for hassle-free pet travel.", color: "bg-green-600", img: serviceImage3 },
   { title: "Pet Dental Care", description: "Comprehensive oral health care for your pets.", color: "bg-amber-500", img: serviceImage4  },
   { title: "General Surgery", description: "Expert surgical care to ensure your pet’s well-being.", color: "bg-purple-600", img: serviceImage5 },
@@ -127,18 +127,18 @@ export const roadMap = [
 
 export const testimonialData = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae ligula tincidunt, venenatis augue sed, volutpat est.",
+    text: "The staff here is so kind, caring, and simply incredible! The excitement they have when they see my dog, Lion, and how excited he even gets when he sees all of them, is what I love most! Makes me as a dog owner know my pup is in the right hands for care",
     name: " ",
-    role: "Pet Owner | Happy Client",
+    role: "Henry Ejiofor | Happy Client",
   },
   {
-    text: "Quisque efficitur dolor vel ipsum aliquet, at feugiat urna accumsan. Mauris vehicula ante non nulla consectetur lacinia.",
+    text: "Ive been bringing my two cats to Polaris Veterinary consult for years, and every visit has been wonderful. The team is incredibly knowledgeable and kind. They took the time to answer all of my questions about my cats health, and they even went the extra mile by following up the next day to check on her progress. I can always count on them to provide the best care for my pets.",
     name: " ",
-    role: "Pet Parent | Loyal Visitor",
+    role: "Rosemary | Loyal Visitor",
   },
   {
-    text: "Ut volutpat ligula ac elit vestibulum, sed bibendum erat commodo. Aenean consequat velit et ipsum molestie aliquam.",
+    text: "After visiting several vet clinics in the area, I can confidently say that Polaris Veterinary is hands down the best. The team is extremely professional and knowledgeable. They treat my dog like family, and I love that they are proactive about his health. I always feel comfortable asking questions, and I leave every appointment knowing hes in the best hands",
     name: " ",
-    role: "Pet Owner | Frequent Client",
+    role: "Mr Ndubuisi | Frequent Client",
   },
 ];

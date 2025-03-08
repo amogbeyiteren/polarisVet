@@ -45,11 +45,7 @@ const Contact = () => {
           />
         </h3>
         <p className=" ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          sequi pariatur aspernatur, architecto ad hic aperiam, mollitia ex
-          laborum impedit quod iste suscipit nisi qui iusto. Exercitationem
-          officiis quas beatae sed veritatis aliquam commodi tempore modi
-          provident!
+          How may we help you today
         </p>
         <ul>
           <li className="flex items-center my-[20px]">
@@ -58,7 +54,8 @@ const Contact = () => {
               alt="mail"
               className="w-[25px] mr-[10px]"
             />
-            polarisvet@gmail.com
+            <a href="mailto:polarisvet@gmail.com">polarisvet@gmail.com</a>
+          
           </li>
           <li className="flex items-center my-[20px]">
             <img
@@ -66,7 +63,8 @@ const Contact = () => {
               alt="phone"
               className="w-[25px] mr-[10px]"
             />{" "}
-            +2 123-456-7890
+            <a href="tel:+2348072677221"> +234 807-267-7221</a>
+            
           </li>
           <li className="flex items-center my-[20px]">
             <img
@@ -74,7 +72,7 @@ const Contact = () => {
               alt="location"
               className="w-[25px] mr-[10px]"
             />
-            Block 203 Algeria Road Manhattan, USA
+            103 Ibusa Road, Umuonaje, Asaba, Delta
           </li>
         </ul>
       </div>
