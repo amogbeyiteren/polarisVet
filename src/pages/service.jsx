@@ -126,11 +126,11 @@ const Service = () => {
               src={service.img}
             />
 
-            <div className="relative rounded-xl  -mt-16 px-10 py-5  bg-white m-10">
+            <div className="relative rounded-xl  -mt-16 px-10 py-5  flex flex-col items-start justify-between bg-white h-full m-10">
               <button className="font-semibold text-lg h-[50px] hover:text-green-900 transition duration-500 ease-in-out inline-block mb-2">
                 {service.title}
               </button>
-              <p className="text-gray-500 text-sm h-[50px] md:h-[30px]">
+              <p className="text-gray-500 text-sm min-h-[50px] md:min-h-[30px]">
                 {service.description}
               </p>
               <p className="mt-5 text-gray-600 text-xs">
