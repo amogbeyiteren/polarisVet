@@ -7,15 +7,14 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Service = () => {
   const [modalIndex, setModalIndex] = React.useState(null);
-  console.log(document.getElementById("modal-root"));
   const [minDate, setMinDate] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [fullDescriptionIndex, setFullDescriptionIndex] = React.useState(null); // State to track full description visibility
 
   React.useEffect(() => {
     const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
     setMinDate(today);
   }, []);
-
-  const [isLoading, setIsLoading] = React.useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -41,6 +40,11 @@ const Service = () => {
     }
   };
 
+  const closeModal = () => {
+    setModalIndex(null);
+    setFullDescriptionIndex(null); // Reset full description to 20 characters after closing the modal
+  };
+
   return (
     <section className="overflow-hidden">
       <div className="flex bg-yellow-50 flex-col lg:flex-row lg:items-stretch lg:min-h-[800px]">
@@ -60,7 +64,7 @@ const Service = () => {
               Our Services.
             </h1>
             <p className="mt-8 text-xl text-black">
-              We provide a variety of Professional vetinanary services to your
+              We provide a variety of Professional veterinary services to your
               pets.
             </p>
 
@@ -115,29 +119,38 @@ const Service = () => {
       <h2 className="text-center bg-green-50 pt-12 text-4xl font-bold text-black">
         Our Services
       </h2>
-      <div className="grid py-12 px-6 bg-green-50 lg:px-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 max-w-[85rem] mx-auto">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="rounded-xl overflow-hidden flex flex-col max-w-xl mx-auto"
-          >
-            <img
-              className="w-full rounded-xl h-[250px] object-cover"
-              src={service.img}
-            />
+      <div className="grid py-12 px-6 bg-green-50 lg:px-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[85rem] mx-auto">
+        {services.map((service, index) => {
+          // Limit the description to 20 characters if it's not the full description
+          const isFullDescription = fullDescriptionIndex === index;
+          const description = isFullDescription
+            ? service.description
+            : service.description.slice(0, 20) + "...";
 
-            <div className="relative rounded-xl  -mt-16 px-10 py-5  flex flex-col items-start justify-between bg-white h-full m-10">
-              <button className="font-semibold text-lg h-[50px] hover:text-green-900 transition duration-500 ease-in-out inline-block mb-2">
-                {service.title}
-              </button>
-              <p className="text-gray-500 text-sm min-h-[50px] md:min-h-[30px]">
-                {service.description}
-              </p>
-              <p className="mt-5 text-gray-600 text-xs">
-                <div className="bg-white h-[50px] flex items-start justify-start">
-                  <>
+          return (
+            <div
+              key={index}
+              className="rounded-xl overflow-hidden flex flex-col max-w-xl mx-auto"
+            >
+              <img
+                className="w-full rounded-xl h-[250px] object-cover"
+                src={service.img}
+              />
+
+              <div className="relative rounded-xl -mt-16 px-10 py-5 flex flex-col items-start justify-between bg-white h-full m-10">
+                <button className="font-semibold text-lg h-[50px] hover:text-green-900 transition duration-500 ease-in-out inline-block mb-2">
+                  {service.title}
+                </button>
+                <p className="text-gray-500 text-sm min-h-[50px] md:min-h-[30px]">
+                  {description}
+                </p>
+                <p className="mt-5 text-gray-600 text-xs">
+                  <div className="bg-white h-[50px] flex items-start justify-start">
                     <button
-                      onClick={() => setModalIndex(index)}
+                      onClick={() => {
+                        setFullDescriptionIndex(index); // Set the service to show full description
+                        setModalIndex(index); // Open the modal when the user clicks "See More"
+                      }}
                       className="relative inline-flex items-center px-12 py-3 overflow-hidden font-medium text-green-900 border-2 border-green-900 rounded-full hover:text-white group hover:bg-gray-50"
                     >
                       <span className="absolute left-0 block w-full h-0 transition-all bg-green-900 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
@@ -157,7 +170,7 @@ const Service = () => {
                           ></path>
                         </svg>
                       </span>
-                      <span className="relative">Book Appointment</span>
+                      <span className="relative">See More</span>
                     </button>
                     {index === modalIndex &&
                       createPortal(
@@ -166,7 +179,7 @@ const Service = () => {
                             <div className="w-full flex justify-end">
                               <button
                                 className="mt-4 text-red-500 hover:underline"
-                                onClick={() => setModalIndex(null)}
+                                onClick={closeModal} // Close the modal and reset the description
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -186,86 +199,24 @@ const Service = () => {
                                 </svg>
                               </button>
                             </div>
-                            <h2 className="text-2xl mb-4">
-                              Book an Appointment
-                            </h2>
+                            <h2 className="text-2xl mb-4">Full Description</h2>
+                            <p className="mb-4">{service.description}</p>
                             <form onSubmit={onSubmit}>
-                              <label className="block mb-2">Your Name</label>
-                              <input
-                                type="text"
-                                name="name"
-                                placeholder="Enter your name"
-                                required
-                                className="block w-full bg-[#ebecfe] p-3 border-0 outline-0 mt-1 resize-none rounded"
-                              />
-
-                              <label className="block mb-2 mt-4">
-                                Phone Number
-                              </label>
-                              <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Enter your phone number"
-                                required
-                                className="block w-full bg-[#ebecfe] p-3 border-0 outline-0 mt-1 resize-none rounded"
-                              />
-
-                              <label className="block mb-2 mt-4">Email</label>
-                              <input
-                                type="email"
-                                name="email"
-                                placeholder="Enter your email address"
-                                required
-                                className="block w-full bg-[#ebecfe] p-3 border-0 outline-0 mt-1 resize-none rounded"
-                              />
-
-                              <label className="block mb-2 mt-4">
-                                Write your messages here
-                              </label>
-                              <textarea
-                                name="message"
-                                rows="2"
-                                placeholder="Enter your Message"
-                                required
-                                className="block w-[100%] bg-[#ebecfe] p-[15px] border-0 outline-0 mt-[5px] resize-none"
-                              />
-
-                              <label className="block mb-2 mt-4">
-                                Appointment Date
-                              </label>
-                              <input
-                                type="date"
-                                name="date"
-                                min={minDate}
-                                required
-                                className="block w-full bg-[#ebecfe] p-3 border-0 outline-0 mt-1 resize-none rounded"
-                              />
-
-                              <button
-                                type="submit"
-                                disabled={isLoading}
-                                className="bg-[#000f38] flex items-center justify-center text-white rounded-xl mt-6 font-semibold text-lg p-4 w-full"
-                              >
-                                {isLoading ? "Sending..." : "Submit"}
-                                {!isLoading && (
-                                  <img
-                                    src={assets.whiteArrow}
-                                    alt=""
-                                    className="w-[35px] ml-[10px]"
-                                  />
-                                )}
+                              {/* Your appointment form fields */}
+                              <button className="relative inline-flex items-center px-12 py-3 overflow-hidden font-medium text-green-900 border-2 border-green-900 rounded-full hover:text-white group hover:bg-gray-50">
+                                <span className="relative">Book Appointment</span>
                               </button>
                             </form>
                           </div>
                         </div>,
                         document.getElementById("modal-root")
                       )}
-                  </>
-                </div>
-              </p>
+                  </div>
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <ToastContainer
         position="top-center"
