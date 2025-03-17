@@ -24,8 +24,7 @@ import serviceImage2 from "./service-image2.jpg";
 import serviceImage3 from "./service-image3.jpg";
 import serviceImage4 from "./service-image4.jpg";
 import serviceImage5 from "./service-image5.jpg";
-
-
+import bovine from "./bovine.jpg";
 import aboutImage1 from "./about-image1.jpg";
 import aboutImage2 from "./about-image2.jpg";
 import aboutImage3 from "./about-image3.jpg";
@@ -77,12 +76,12 @@ export const brandImages = [
 
 export const services = [
     { title: "Pet in-House Diagnostics", description: "Polaris Veterinary Consult places a significnt emphasis on using top notch diagnostic equipment because we recognize that diagnostics are an essential componentof veterinary", color: "bg-blue-600", img: serviceImage1 },
-    {title: "Bloodwork", description:"Our veterinarians will advise getting bloodwork done in situations of illness, during wellness/preventtive care appoitments and before surgery to more accurately asses your pet's organ functions.The most frequent tests are a CBC and a biochemistry.Blood glucose, electrolytes,kidney and liver function among other systems,will all be represented by values that biochemistry will supply.Values from the CBC will be used to look for indicators or anemia.<br>Haematology<br>Five part leukocyte differential,blood smar evaluation of every sample,and vlood coagulation analysis.<br>Biochemistry<br>Clinical biochemistry of body systems,endocrinology,drug monitoring and scrology.<br>Microbiology<br>Bacterial and fungal culture,mic testing,parasitology, and comprehensive urine testing.<br>Faeces can be examined for evidence of protozoan or helminth prasites using faecal flotation methods and or rapid immunoassays.", color: "bg-red-600",serviceImage1},
+    {title: "Bloodwork", description:"Our veterinarians will advise getting bloodwork done in situations of illness, during wellness/preventtive care appoitments and before surgery to more accurately asses your pet's organ functions.The most frequent tests are a CBC and a biochemistry.Blood glucose, electrolytes,kidney and liver function among other systems,will all be represented by values that biochemistry will supply.Values from the CBC will be used to look for indicators or anemia.<br>Haematology<br>Five part leukocyte differential,blood smar evaluation of every sample,and vlood coagulation analysis.<br>Biochemistry<br>Clinical biochemistry of body systems,endocrinology,drug monitoring and scrology.<br>Microbiology<br>Bacterial and fungal culture,mic testing,parasitology, and comprehensive urine testing.<br>Faeces can be examined for evidence of protozoan or helminth prasites using faecal flotation methods and or rapid immunoassays.", color: "bg-red-600",img:serviceImage1},
     {title: "Radiology", description: "Radiography is available right here at our facility to help with the rapid identification of a variety of conditions and illnesses.This radiograph interpretation is an extra service to our clients and patients", color: "bg-red-500", img: serviceImage2 },
   { title: "Animal Health Certificate", description: "Documentation for hassle-free pet travel.", color: "bg-green-600", img: serviceImage3 },
   { title: "Pet Dental Care", description: "Comprehensive oral health care for your pets.", color: "bg-amber-500", img: serviceImage4  },
   { title: "General Surgery", description: "Expert surgical care to ensure your pets well-being.", color: "bg-purple-600", img: serviceImage5 },
-  { title: "Large Animal Services", description: "Specialized care for large animals and livestock.", color: "bg-teal-600", img: serviceImage2 },
+  { title: "Large Animal Services", description: "Specialized care for large animals and livestock.", color: "bg-teal-600", img: horses },
   { title: "Online Appointment Booking", description: "Easily schedule appointments online.", color: "bg-blue-400", img: serviceImage3 },
   { title: "Parasite Control", description: "Protect your pets from harmful parasites.", color: "bg-yellow-500", img: serviceImage4 },
   { title: "Pet Euthanasia", description: "Compassionate end-of-life care for your pets.", color: "bg-gray-600", img: serviceImage1 },
