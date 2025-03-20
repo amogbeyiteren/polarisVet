@@ -45,7 +45,8 @@ import canecorso from "./canecorso.jpg";
 import browndog from "./browndog.jpg";
 import blackhorse from "./blackhorse.jpg";
 import tinybulldog from "./tinybulldog.jpg";
-
+import compassionateteam from "./compassionateteam.jpg";
+import compre from "./compre.jpg";
 export const assets = {
   polarisLogo,
   serviceImage1,
@@ -71,6 +72,8 @@ export const assets = {
   rocket,
   backIcon,
   nextIcon,
+  compassionateteam,
+  compre,
   
 };
 

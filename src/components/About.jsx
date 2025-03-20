@@ -146,7 +146,7 @@ const About = () => {
                   <div>
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl"
-                      src={activeTab===1?assets.aboutImage1:activeTab===2?assets.aboutImage2:assets.aboutImage3}
+                      src={activeTab===1?assets.compre:activeTab===2?assets.aboutImage2:assets.compassionateteam}
                       alt="Features Image"
                     />
                   </div>
