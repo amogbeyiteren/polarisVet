@@ -11,7 +11,7 @@ const Footer = () => {
           <img src={assets.logoWhite} alt="logo" className="w-28" />
           
       </HashLink>
-      <p className="my-6 text-gray-500 dark:text-gray-400">PolarisVet is dedicated to providing compassionate, expert veterinary care, offering comprehensive services to keep pets healthy and happy.</p>
+      <p className="my-6 text-gray-500 dark:text-gray-400">Polaris Veterinary Consult is dedicated to providing compassionate, expert veterinary care, offering comprehensive services to keep pets healthy and happy.</p>
       <ul className="flex flex-wrap justify-center items-center mb-2 text-gray-900 dark:text-white">
           <li>
               <HashLink smooth to="/#" className="mr-4 hover:underline md:mr-6 ">Home</HashLink>
@@ -43,6 +43,7 @@ const Footer = () => {
 
       </ul>
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <HashLink smooth to="/#" className="hover:underline">PolarisVet </HashLink>. All Rights Reserved.</span>
+      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <HashLink smooth to="https://www.instagram.com/pixelforge4?igsh=MTE4NW5tajRnYTZkeA%3D%3D&utm_source=qr" className="hover:underline">Pixelforge </HashLink>. All Rights Reserved.</span>
   </div>
 </footer>
   );

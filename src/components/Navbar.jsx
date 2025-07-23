@@ -62,7 +62,7 @@ const Navbar = () => {
         } md:hidden fixed w-full right-0 top-0 bottom-0 overflow-hidden mt-4 px-4 bg-white transition-all `}
       >
         <div className="flex justify-between items-center">
-          <img src={assets.polarisLogo} alt="logo" />
+          <img src={assets.polarisLogo} className="w-20" alt="logo" />
           <img
             src={assets.close}
             alt="menu"

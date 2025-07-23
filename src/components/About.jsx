@@ -10,10 +10,10 @@ const About = () => {
         <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
           <div className="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
             <h2 className="text-2xl text-gray-800 font-bold sm:text-3xl">
-              About PolarisVet
+              About Polaris Veterinary consult
             </h2>
             <p className="mt-4 text-gray-600">
-              At PolarisVet, we’re dedicated to improving the health and
+              At Polaris Veterinary Consult, we’re dedicated to improving the health and
               well-being of your pets. Our team of skilled veterinarians and
               staff offers compassionate, high-quality care for pets of all
               shapes and sizes.
@@ -146,7 +146,7 @@ const About = () => {
                   <div>
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl"
-                      src={activeTab===1?assets.aboutImage1:activeTab===2?assets.aboutImage2:assets.aboutImage3}
+                      src={activeTab===1?assets.compre:activeTab===2?assets.aboutImage2:assets.compassionateteam}
                       alt="Features Image"
                     />
                   </div>
