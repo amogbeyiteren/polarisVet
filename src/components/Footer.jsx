@@ -43,8 +43,8 @@ const Footer = () => {
 
       </ul>
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <HashLink smooth to="/#" className="hover:underline">PolarisVet </HashLink>. All Rights Reserved.</span>
-      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <HashLink smooth to="https://www.instagram.com/pixelforge4?igsh=MTE4NW5tajRnYTZkeA%3D%3D&utm_source=qr" className="hover:underline">Pixelforge </HashLink>. All Rights Reserved.</span>
-  </div>
+      <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <HashLink smooth to="https://www.instagram.com/pixelforge4?igsh=MTE4NW5tajRnYTZkeA%3D%3D&utm_source=qr" className="hover:underline">Pixelforge </HashLink>. All Rights Reserved.</p>
+  </div> 
 </footer>
   );
 };
